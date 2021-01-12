@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class DogTest {
+  public static void main(String[] args) {
+    Scanner a = new Scanner(System.in);
+    
+    System.out.println("Enter the dog age");
+    int dogAge = a.nextInt();
+    System.out.println("Enter the dog name");
+    String dogName = a.nextLine();
+    
+    Dog b = new Dog();
+    int dogHumanAge = b.convertToHumanAge(dogAge);
+    
+	System.out.println(dogHumanAge);
+   
+    a.close();
+    
+    
+  }
+}
